@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="./nocourses.css" />
+    <link rel="stylesheet" href="./global.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>    
+    <div>
+      <header class="rectangle-group">
+        <div class="frame-group">
+          <div class="price-tag-3-fill-parent">
+            <img
+              class="price-tag-3-fill-icon"
+              alt=""
+              src="./public/pricetag3fill.svg"
+            />
+
+            <div class="get-20-off-container">
+              <span>Get </span>
+              <b>20% off</b>
+              <span> by referring your friend</span>
+            </div>
+          </div>
+          <button class="frame-container">
+              <div class="click-here-to">Click here to know more</div>
+          </button>
+        </div>
+      </header>
+      <div class="frame-parent">
+          <div class="kalwe-parent">
+            <b class="kalwe">Kalwe</b>
+            <div class="education">Education</div>
+          </div>
+          <div class="home-parent">
+            <div class="home"><a href="./home_page.html">Home</a></div>
+            <div class="home"><a href="course.html">Courses</a></div>
+            <div class="home"><a href="#">Blog</a></div>
+            <div class="home"><a href="./landing_page.html">About Us</a></div>
+            <p class="my-courses"><b>My courses</b></p>
+          </div>
+            <div class="select-btn">
+              <img class="frame-child" alt="" src="./public/ellipse-119@2x.png" />
+              <div class="users-name">Users Name</div>
+              <img
+              class="arrow-down-s-line-icon"
+              alt=""
+              src="./public/arrowdownsline.svg"
+              />
+            </div>
+            <ul class="list-items">
+              <li class="item">
+                  <span class="item-text"><a href="./profile.html">Profile</a></span>
+              </li>
+              <li class="item">
+                  <span class="item-text"><a href="./referral_page.html">Refer A Friend</a></span>
+              </li>
+              <hr>
+              <li class="item">
+                  <span class="item-text"><a href="#">Log out</a></span>
+              </li>
+            </ul>
+      </div>
+    <main class="main-content">
+      <div class="my-courses1">My Courses</div>
+      <div class="these-are-the">These are the courses you have enrolled.</div>
+      <img
+        class="boy-studying-remotely-with-tut"
+        alt=""
+        src="./public/boy-studying-remotely-with-tutor@2x.png"
+      />
+
+      <div class="looks-like-you">
+        Looks like you have not enrolled to any course!
+      </div>
+      <button class="get-course-wrapper" type="submit">
+        <div class="get-course"><a href="course.html">Get Course</a></div>
+      </button>
+    </main>
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <div class="kalwe-education-inc">© 2023 Kalwe Education Inc.</div>
+        <div class="line-parent">
+          <div class="group-item"></div>
+          <div class="group-inner"></div>
+          <div class="careers">Careers</div>
+          <div class="privacy-policy">Privacy Policy</div>
+          <div class="terms-conditions">Terms & Conditions</div>
+        </div>
+        <div class="your-education-patner-parent">
+          <div class="your-education-patner">Your education patner</div>
+          <div class="kalwe-group">
+            <b class="kalwe">Kalwe</b>
+            <div class="education">Education</div>
+          </div>
+          <img class="line-icon" alt="" src="./public/line-12.svg" />
+        </div>
+      </div>
+    </div>
+      <script>const selectBtn = document.querySelector(".select-btn"),
+        items = document.querySelectorAll(".item");
+    selectBtn.addEventListener("click", () => {
+      selectBtn.classList.toggle("open");
+    });
+    </script>
+  </body>
+</html>

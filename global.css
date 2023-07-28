@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-base: 1rem;
+  --font-size-xs: 0.75rem;
+  --font-size-3xs: 0.63rem;
+  --font-size-sm: 0.88rem;
+  --font-size-9xl: 1.75rem;
+
+  /* Colors */
+  --primary-white: #fff;
+  --primary-black: #000;
+  --grey-300: #d9d9d9;
+  --grey-200: #ececec;
+  --grey-800: #404040;
+  --color-gray-100: #797979;
+  --primary-bright-yellow: #f9da78;
+  --primary-light-yellow: #fdf2d0;
+  --color-crimson: #d31f1f;
+
+  /* Gaps */
+  --gap-5xs: 0.5rem;
+  --gap-9xs: 0.25rem;
+  --gap-xs: 0.75rem;
+
+  /* Paddings */
+  --padding-5xs: 0.5rem;
+  --padding-5xl: 1.5rem;
+  --padding-9xs: 0.25rem;
+  --padding-3xs: 0.63rem;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+  --br-9xs: 4px;
+  --br-11xs-5: 1.5px;
+ 
+  
+
+    /* fonts */
+    --font-poppins: Poppins;
+    --font-roboto: Roboto;
+    --font-lato: Lato;
+    --font-nunito-sans: "Nunito Sans";
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-6xs-3: 6.3px;
+    --font-size-smi-6: 12.6px;
+    --font-size-5xl: 24px;
+    --font-size-9xl: 28px;
+    --font-size-smi: 13px;
+    --font-size-13xl: 32px;
+    --font-size-mini: 15px;
+    --font-size-lg: 18px;
+  
+    /* Colors */
+    --primary-light-yellow: #fdf2d0;
+    --primary-black: #000;
+    --primary-white: #fff;
+    --color-crimson-100: #d31f1f;
+    --grey-800: #404040;
+    --grey-700: #666;
+    --grey-500: #8c8c8c;
+    --grey-600: #797979;
+    --vimeo-black: rgba(0, 0, 0, 0.7);
+    --vimeo-branding: #00adef;
+    --primary-bright-yellow: #f9da78;
+    --color-khaki-100: rgba(249, 218, 120, 0.4);
+    --color-slategray: #696984;
+    --color-gold: #ffc727;
+    --color-lightsteelblue: rgba(201, 211, 231, 0.4);
+    --primary-light-brown: #d6a881;
+    --color-lemonchiffon: #fff2cc;
+  
+    /* Gaps */
+    --gap-13xl: 32px;
+    --gap-base: 16px;
+    --gap-9xs: 4px;
+    --gap-5xs: 8px;
+    --gap-29xl: 48px;
+    --gap-mini: 15px;
+    --gap-3xs: 10px;
+  
+    /* Paddings */
+    --padding-5xl: 24px;
+    --padding-base: 16px;
+    --padding-5xs: 8px;
+    --padding-xs: 12px;
+    --padding-3xs: 10px;
+    --padding-13xl: 32px;
+  
+    /* border radiuses */
+    --br-5xs: 8px;
+    --br-9xs: 4px;
+    --br-12xs: 1px;
+    --br-23xl-4: 42.4px;
+    --br-mini-1: 14.1px;
+    --br-12xs-3: 0.3px;
+    --br-9xs-2: 3.2px;
+    --br-10xl: 29px;
+    --br-mini: 15px;
+    --br-sm-7: 13.7px;
+    --br-13xl: 32px;
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-nunito-sans: "Nunito Sans";
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-xs: 12px;
+  --font-size-6xs-3: 6.3px;
+  --font-size-smi-6: 12.6px;
+  --font-size-5xl: 24px;
+  --font-size-sm: 14px;
+  --font-size-9xl: 28px;
+  --font-size-smi: 13px;
+  --font-size-13xl: 32px;
+  --font-size-mini: 15px;
+  --font-size-lg: 18px;
+
+  /* Colors */
+  --grey-500: #8c8c8c;
+  --grey-600: #797979;
+  --vimeo-black: rgba(0, 0, 0, 0.7);
+  --primary-white: #fff;
+  --vimeo-branding: #00adef;
+  --primary-bright-yellow: #f9da78;
+  --color-khaki-100: rgba(249, 218, 120, 0.4);
+  --grey-800: #404040;
+  --primary-black: #000;
+  --color-slategray: #696984;
+  --color-gold: #ffc727;
+  --color-lightsteelblue: rgba(201, 211, 231, 0.4);
+  --primary-light-yellow: #fdf2d0;
+  --grey-700: #666;
+  --primary-light-brown: #d6a881;
+  --color-lemonchiffon: #fff2cc;
+
+  /* Gaps */
+  --gap-29xl: 48px;
+  --gap-5xs: 8px;
+  --gap-13xl: 32px;
+  --gap-mini: 15px;
+  --gap-3xs: 10px;
+
+  /* Paddings */
+  --padding-xs: 12px;
+  --padding-5xl: 24px;
+  --padding-5xs: 8px;
+  --padding-3xs: 10px;
+  --padding-base: 16px;
+  --padding-13xl: 32px;
+
+  /* border radiuses */
+  --br-9xs: 4px;
+  --br-12xs: 1px;
+  --br-5xs: 8px;
+  --br-23xl-4: 42.4px;
+  --br-mini-1: 14.1px;
+  --br-12xs-3: 0.3px;
+  --br-9xs-2: 3.2px;
+  --br-10xl: 29px;
+  --br-mini: 15px;
+  --br-sm-7: 13.7px;
+  --br-13xl: 32px;
+  
+  
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

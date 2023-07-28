@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalwe Education</title>
+  <link rel="stylesheet" href="./registration_styles.css">
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Product Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+    />
+    <script src="index.js"></script>
+</head>
+<body>
+  <div class="Left">
+    
+    <div class="kalwe-parent">
+      <b class="kalwe">Kalwe</b>
+      <div class="education">Education</div>
+    </div>
+    <div class="frame-inner" autofocus>
+      <div class="rectangle-box"></div>
+      <button class="login"><a href="./login.html">Login</a></button>
+      <button class="register" id="registerText">Register</button>
+    </div>
+  
+    <form enctype="multipart/form-data" class="frame-group" method="post" id="myForm">    
+      <div class="frame-container">
+      
+        <div class="email">Email</div>
+      
+        <input type="email" class="enter-your-user" name="email" required placeholder="Enter your email"></input>
+        <div class="mobile">Mobile Number</div>
+      
+        <input type="tel" class="enter-your-user" name="phone" required maxlength="10" placeholder="Enter your mobile"></input>
+        <div class="dob">Date of Birth</div>
+      
+        <input type="date" class="enter-your-user1" name="dob" required placeholder="Enter your dob"></input>
+
+          <!-- <div class="password">Password</div>
+          <input type="password" class="enter-your-password" placeholder="Enter your Password"></input>
+          <div class="confirm-password">Confirm Password</div>
+          <input type="password" class="enter-your-password" placeholder="Confirm your Password"></input>
+        <div class="rectangle-container">
+          <input type="checkbox" id="frame-child2" name="remember">
+          <label for="remember">Agree to terms and conditions</label>
+        </div> -->
+
+        <button id="btn" class="login-wrapper"><div class="login1">Register</div></button>
+       </div> 
+    </form>
+  </div>
+  <div class="Right">
+    <img class="guy-and-girl-students" alt=" " src="./public/guy-and-girl-students@2x.png" />
+  </div>   
+</body>
+<script>
+  const myForm = document.getElementById('myForm');
+  const btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        const formData = new FormData(myForm);
+        fetch("http://ec2-13-126-43-216.ap-south-1.compute.amazonaws.com:5050/api/auth/signup",{
+        method:"POST",
+        body: formData
+
+    }).then(res=>{
+        return res.json()
+    })
+  });
+</script>
+</html>

@@ -1,0 +1,265 @@
+
+
+body{
+    margin: 0;
+    background: #FDF2D0;
+    font-family: 'Poppins';
+    font-style: normal;
+  
+  }
+  .Left{
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+  }
+  .kalwe-parent{
+    padding-top: 42px;
+    padding-bottom: 8px;
+  }
+  .kalwe{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .education{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  bottom: 15px;
+  }
+  .frame-inner
+  {
+    width: 329px;
+    height: 59px;
+    position: relative;
+    left: 219px;
+    bottom: 15px;
+    background: #F9DA78;
+    border-radius: 33px;
+    margin-bottom: 32px;
+  }
+  .frame-inner>*{
+    background: transparent;
+    border: 0;
+    width: 25%;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    top: 15px;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  .login{
+    padding-right: 40px;
+    font-weight: 500;
+    left: -16px;
+  }
+  .register{
+    padding-left: 40px;
+    font-weight: 400;
+  }
+  .frame-container
+  {
+    margin-top: 17px; 
+  }
+  .email-or-mobile{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 190px;
+    height: 24px;
+    position: relative;
+    left: 7.6rem;
+    padding-bottom: 8px;
+  }
+  .enter-your-user, .enter-your-password{
+    box-sizing: border-box;
+    position: relative;
+    width: 435px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #F9DA78;
+    border-radius: 40px;
+    left: 18.5px;
+    padding-left: 10px;
+  }
+  
+  .password{
+  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 190px;
+  height: 24px;
+  position: relative;
+  left: 11rem;
+  padding-bottom: 8px;
+  padding-top: 16px;
+  }
+  
+  .rectangle-container{
+    margin:24px 0;
+  }
+  .rectangle-container>*{
+    display: inline-block;
+  }
+  #frame-child2{
+    position: relative;
+  right: 80px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  }
+  label{
+    position: relative;
+  right: 70px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  width: 90px;
+  height: 18px;
+  }
+  .forgot-password{
+    width: 108px;
+    height: 18px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    position: relative;
+    left: 128px;
+  }
+  .login-wrapper{
+    position: relative;
+    left: 7rem;
+    background: #F9DA78;
+    border-radius: 36px;
+    width: 232px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    top: 1rem;
+    border: 0;
+  }
+  /* .hr-div>*{
+    display: inline-block;
+  }
+  .hr-div{
+    margin-top:42px;
+    margin-bottom:15px;
+  }
+  .or{
+    font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  width: 14px;
+  height: 18px;
+  }
+  hr{
+    width: 203px;
+    height: 0px;
+    border: 2px dashed #D8D8D8;
+    position: relative;
+    top: 5px;
+  }
+  
+  .google-btn{
+    width: 184px;
+    height: 42px;
+    background-color: #4285f4;;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    position: relative;
+    left: 290px;
+    margin-bottom:12px;
+  }
+    .google-icon-wrapper{
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #fff;
+    }
+    .google-icon{
+      margin-top: 11px;
+      width: 18px;
+      height: 18px;
+    }
+    .btn-text {
+      float: right;
+      margin: 11px 11px 0 0;
+      color: #fff;
+      font-size: 14px;
+      font-family: "Roboto";
+      font-weight: lighter;
+    }
+  
+    .apple-btn{
+      width: 184px;
+      height: 42px;
+      background-color: #ffffff;;
+      position: relative;
+      left: 290px;
+      margin-bottom:12px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    }
+  
+    .apple-icon-wrapper{
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #ffffff;
+    }
+  
+    .apple-icon{
+      width: 18px;
+      margin-top: 8.5px;
+      margin-bottom: 8.5px
+    }
+    .apple-btn-text
+    {
+      position: relative;
+      right: 8px;
+      float: right;
+      margin: 13px 11px 0 0;
+      color: #000000;
+      font-size: 14px;
+      font-family: "Roboto";
+      font-weight: lighter;
+    }*/
+    .rectangle-box{
+     width: 146px;  
+      height: 40px;
+      background: #FDF2D0;
+      border-radius: 33px;
+      position: absolute; 
+      top: 8.5px;
+      left: 13px;
+    }  
+    .guy-and-girl-students{position: absolute;
+        width: 255px;
+    height: 456px;
+    left: 40vh;
+    top: 116px;
+  
+  background: url(.png)}
+  a{
+    text-decoration: none;
+    color: #000000;
+  }

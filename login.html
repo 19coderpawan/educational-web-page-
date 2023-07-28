@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalwe Education</title>
+  <link rel="stylesheet" href="./login.css">
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Product Sans:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+    />
+    
+</head>
+<body>
+  <div class="Left">
+    
+    <div class="kalwe-parent">
+      <b class="kalwe">Kalwe</b>
+      <div class="education">Education</div>
+    </div>
+  
+    <div class="frame-group">
+    
+      <div class="frame-inner" autofocus>
+        <div class="rectangle-box"></div>
+        <button class="login">Login</button>
+        <button class="register" id="registerText"><a href="./registration_page.html">Register</a></button>
+      </div>
+        
+      <form class="frame-container" id="myForm" method="post">
+      
+        <div class="email-or-mobile">Email</div>
+      
+        <input required type="email" name="email" class="enter-your-user" placeholder="Enter your username"></input>
+        
+        <div class="rectangle-group">
+          <div class="password">One Time Password</div>
+          <input  type="password" class="enter-your-password" placeholder="Enter your Password"></input>
+         <!-- <img
+          class="invisible-1-icon"
+          alt=""
+          src="./public/invisible-1.svg"
+        /> -->
+         </div>  
+        <!-- <div class="rectangle-container">
+          <input type="checkbox" id="frame-child2" name="remember">
+          <label for="remember">Remember me</label>
+          <div class="forgot-password"><a href="">Forgot Password?</a></div>
+        </div> -->
+
+        <button type="submit" class="login-wrapper"><div class="login1">Login</div></button>
+    
+<!--         <div class="hr-div">
+          <hr>
+          <p class="or">Or</p>
+          <hr>
+        </div>
+   
+        <div>
+          
+          <div class="google-btn">
+            
+            <div class="google-icon-wrapper">
+              <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+            </div>
+            
+            <p class="btn-text"><b>Sign in with google</b></p>
+          
+          </div>
+
+          <div class="apple-btn">
+            
+            <div class="apple-icon-wrapper">
+              <img class="apple-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png"/>
+            </div>
+            
+            <p class="apple-btn-text"><b>Sign in with Apple</b></p>
+          
+          </div> -->
+        <!-- </div> -->
+       </div> 
+    </form>
+  </div>
+  <div class="Right">
+    <img class="guy-and-girl-students" alt=" " src="./public/guy-and-girl-students@2x.png" />
+  </div>   
+  <script>
+    const myForm = document.getElementById('myForm');
+    // const btn = document.getElementById('btn');
+    myForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        const formData = new FormData(myForm);
+        fetch("http://ec2-13-126-43-216.ap-south-1.compute.amazonaws.com:5050/api/auth/send-otp",{
+        method:"POST",
+        body: formData
+
+    }).then(res=>{
+        return res.json()
+    })
+  });
+  </script>
+</body>
+</html>
